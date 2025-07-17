@@ -1,10 +1,10 @@
 [
   {
-    "modid": "${modid}",
+    "modid": "farmingmode",
     "name": "Farming Mode",
     "description": "A mod that optimizes performance for farming by reducing render distance and limiting FPS.",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
+    "version": "1.1",
+    "mcversion": "1.8.9",
     "url": "https://github.com/kurdishlabs/FarmingMode",
     "updateUrl": "",
     "authorList": [

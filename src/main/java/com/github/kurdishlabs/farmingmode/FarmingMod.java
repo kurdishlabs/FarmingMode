@@ -15,8 +15,8 @@ import org.lwjgl.input.Keyboard;
 
 @Mod(modid = FarmingMod.MODID, version = FarmingMod.VERSION, clientSideOnly = true)
 public class FarmingMod {
-    public static final String MODID = "farmingmod";
-    public static final String VERSION = "1.0";
+    public static final String MODID = "farmingmode";
+    public static final String VERSION = "1.1";
 
     private KeyBinding toggleKey;
     private boolean farmingModeEnabled = false;
@@ -31,7 +31,7 @@ public class FarmingMod {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         // Register keybinding - default to F key, but user can change it
-        toggleKey = new KeyBinding("key.farmingmod.toggle", Keyboard.KEY_F, "key.categories.farmingmod");
+        toggleKey = new KeyBinding("KeyToggle", Keyboard.KEY_F, "FarmingMode");
         ClientRegistry.registerKeyBinding(toggleKey);
 
         // Register event handler
@@ -63,7 +63,7 @@ public class FarmingMod {
 
             // Send client message
             if (mc.thePlayer != null) {
-                mc.thePlayer.addChatMessage(new ChatComponentText("§aFarming mod enabled"));
+                mc.thePlayer.addChatMessage(new ChatComponentText("§aFarming Mode enabled"));
             }
         } else {
             // Restore previous values
@@ -79,7 +79,7 @@ public class FarmingMod {
 
             // Send client message
             if (mc.thePlayer != null) {
-                mc.thePlayer.addChatMessage(new ChatComponentText("§cFarming mod disabled"));
+                mc.thePlayer.addChatMessage(new ChatComponentText("§cFarming Mode disabled"));
             }
         }
 
