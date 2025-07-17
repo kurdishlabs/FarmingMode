@@ -1,14 +1,14 @@
 [
   {
     "modid": "${modid}",
-    "name": "Xample Mod",
-    "description": "A mod that is used as an example.",
+    "name": "Farming Mode",
+    "description": "A mod that optimizes performance for farming by reducing render distance and limiting FPS.",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "https://github.com/romangraef/Forge1.8.9Template/",
     "updateUrl": "",
     "authorList": [
-      "You"
+      "KurdishLabs"
     ],
     "credits": "",
     "logoFile": "",
