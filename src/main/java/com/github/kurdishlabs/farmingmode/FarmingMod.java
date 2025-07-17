@@ -26,7 +26,7 @@ public class FarmingMod {
     private int previousFpsLimit = -1;
     private boolean previousVsync = false;
 
-    private Minecraft mc = Minecraft.getMinecraft();
+    private final Minecraft mc = Minecraft.getMinecraft();
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
